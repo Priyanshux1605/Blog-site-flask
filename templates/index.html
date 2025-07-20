@@ -11,12 +11,12 @@
         
         <div class="form-group">
             <label for="content">Your Thoughts</label>
-            <textarea id="content" autocomplete="off" name="content" class="form-textarea" rows="10" placeholder="Jot it all down..."></textarea>
+            <textarea id="content" autocomplete="off" name="data" class="form-textarea" rows="10" placeholder="Jot it all down..."></textarea>
         </div>
         
         <div class="button-group">
             <button type="submit" class="btn btn-primary">Save Entry</button>
-            <a href="/entries" class="btn btn-secondary">View Entries</a>
+            <a href="{{ url_for('show_entries') }}" class="btn btn-secondary">View Entries</a>
         </div>
     </form>
 </div>
